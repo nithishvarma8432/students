@@ -52,7 +52,7 @@ function editStudent(index) {
     document.getElementById('class').value = student.studentClass;
     document.getElementById('age').value = student.age;
 
-    students.splice(index, 1);
+    student.splice(index, 1);
     localStorage.setItem('students', JSON.stringify(students));
 }
 
